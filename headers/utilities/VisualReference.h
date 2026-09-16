@@ -1,0 +1,21 @@
+#pragma once
+#include "../windissect_forwards.h"
+
+// Reconstructed from dcompi.dll by Windissect. 6 member(s).
+namespace Microsoft::UI::Composition::Internal {
+class VisualReference {
+public:
+    // Category: Refcount | Source: PDB Internal
+    // Symbol: ?AddRef@VisualReference@Internal@Composition@UI@Microsoft@@UEAAKXZ
+    virtual unsigned long AddRef();
+    // Category: Refcount | Source: PDB Internal
+    // Symbol: ?QueryInterface@VisualReference@Internal@Composition@UI@Microsoft@@UEAAJAEBU_GUID@@PEAPEAX@Z
+    virtual long QueryInterface(_GUID const &, void * *);
+    // Category: Refcount | Source: PDB Internal
+    // Symbol: ?Release@VisualReference@Internal@Composition@UI@Microsoft@@UEAAKXZ
+    virtual unsigned long Release();
+    // Category: Method | Source: PDB Internal
+    // Symbol: ?RuntimeClassInitialize@VisualReference@Internal@Composition@UI@Microsoft@@QEAAJPEAVCompositor@345@I_NPEAX@Z
+    long RuntimeClassInitialize(WindissectOpaque *, unsigned int, bool, void *);
+};
+} // namespace Microsoft::UI::Composition::Internal
